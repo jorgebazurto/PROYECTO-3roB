@@ -1,0 +1,454 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*MENU*/
+.menu{
+    background-color:#0AC300;
+    height:100px;
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+.menu > img{
+  cursor: pointer;
+}
+  
+  .titulo{
+    width:50%;
+    height:100px;
+    display:flex;
+    align-items:center;
+    padding-left:15px;
+    font-size:1.5em;
+    color:white;
+    font-family: 'Silkscreen', cursive;
+  }
+
+  
+/*BUSQUEDA*/
+#container{
+  position: relative;
+  
+}
+#sear{
+  display: inline;
+  font-size: 20px;
+  border-radius: 8em;
+  padding: 1px;
+  
+}
+#s{
+  transition: all 500ms ease;
+  width: 0;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  left: 140px;
+}
+#s:focus{
+  width: 20em;
+  opacity: 2;
+}
+label{
+  color: white;
+  position: relative;
+  left: 23em;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+
+
+/*SECCION 1*/
+
+.ofer{
+  width: 100%;
+  height: 150px;
+  background: rgb(0, 201, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  color: white;
+  margin-top: 1px;
+}
+.ofer a{
+  position: relative;
+  text-decoration: none;
+  color:white;
+  font-size: 18px;
+}
+.ofer a::after{
+  content: "";
+  position: absolute;
+  background-color: yellow;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+.ofer a:hover{
+  color: rgb(231, 231, 231);
+}
+.ofer a:hover::after{
+  width: 100%;
+}
+
+/*SECCION 2*/
+.presentacion2{
+    height:500px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+  }
+  .presentaciondos{
+    width:90%;
+    height:380px;
+    background-color:white;
+    display:flex;
+    align-items:center;
+    gap:40px;
+  }
+  .imagen{
+    height:380px;
+    background:white;
+    width:40%;
+    display:flex;
+    align-items: center;
+  }
+  .imagen > img{
+    transition: all 900ms  ease;
+    cursor: pointer;
+  }
+  .imagen >img:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+  .textoo{
+    width:80%;
+    height:380px;
+    background:white;
+  }
+
+
+/*SECCION 3 INFORMATICA*/
+.sec3{
+    width: 100%;
+    height: 150px;
+    background: rgb(0, 201, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen2{
+    width: 100%;
+    height: 500px;
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.74)),  url(imagen2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+  .imagenn{
+    height:380px;
+    width:40%;
+    display:flex;
+    align-items: center;
+  }
+  .imagenn > img{
+    border-radius: 10px;
+    transition: all 900ms ease;
+    cursor: pointer;
+  }
+  .imagenn > img:hover{
+    transform: scale(1.1);
+  }
+  .textooo{
+    width:50%;
+    height:380px;
+    color: white; 
+}
+
+/*SECCION 4 CONTABILIDAD*/
+.sec4{
+    width: 100%;
+    height: 150px;
+    background: rgb(0, 201, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.imagen3{
+  width: 100%;
+  height: 500px;
+  background:linear-gradient(to right, rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.74)),  url(imagen4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+.imageen{
+  height:380px;
+  width:40%;
+  display:flex;
+  align-items: center;
+}
+.imageen > img{
+  border-radius: 10px;
+  transition: all 900ms ease;
+  cursor: pointer;
+}
+.imageen > img:hover{
+  transform: scale(1.1);
+}
+.teexto{
+  width:53%;
+  height:380px;
+  color: white;
+}
+
+/*SECCION 5 CIENCIAS*/
+.sec5{
+  width: 100%;
+  height: 150px;
+  background: rgb(0, 201, 0);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen5{
+  width: 100%;
+  height: 500px;
+  background:linear-gradient(to right, rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.74)),  url(imagen6.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+.iimage{
+  height:380px;
+  width:40%;
+  display:flex;
+  align-items: center;
+}
+.iimage > img{
+  border-radius: 10px;
+  transition: all 900ms ease;
+  cursor: pointer;
+}
+.iimage > img:hover{
+  transform: scale(1.1);
+}
+.text{
+  width:50%;
+  height:380px;
+  color: white;
+  
+}
+
+
+/*SECCION 6 GESTION ADMINISTRATIVA*/
+.sec6{
+  width: 100%;
+  height: 150px;
+  background: rgb(0, 201, 0);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen6{
+width: 100%;
+height: 500px;
+background:linear-gradient(to right, rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.74)),  url(imagen9.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+margin-top: -19px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-attachment: fixed;
+}
+
+.imaggen{
+height:380px;
+width:40%;
+display:flex;
+align-items: center;
+}
+.imaggen > img{
+border-radius: 10px;
+transition: all 900ms ease;
+cursor: pointer;
+}
+.imaggen > img:hover{
+transform: scale(1.1);
+}
+.teext{
+width:53%;
+height:380px;
+color: white;
+}
+
+
+
+/*SECCION 7 PRODUCCION AGROPECUARIA*/
+.sec7{
+  width: 100%;
+  height: 150px;
+  background: rgb(0, 201, 0);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen7{
+  width: 100%;
+  height: 500px;
+  background:linear-gradient(to right, rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.74)),  url(imagen10.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+
+.immage{
+  height:380px;
+  width:40%;
+  display:flex;
+  align-items: center;
+}
+.immage > img{
+  border-radius: 10px;
+  transition: all 900ms ease;
+  cursor: pointer;
+}
+.immage > img:hover{
+  transform: scale(1.1);
+}
+.textt{
+  width:50%;
+  height:380px;
+  color: white;
+  
+}
+
+
+
+
+/*PIE DE PAGINA*/
+.pie{
+  background-color: #0AC300;
+  height: 230px;
+  display: flex;
+  gap:10px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.seccion1 a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 10px 0;
+  font-size: 20px;
+  color: white;
+  transition: all 500ms ease;
+}
+
+.seccion1 a:link {
+  color: white;
+}
+
+.seccion2 p{
+  color: #FCF8E8;
+  font-size: 22px;
+}
+
+.pie a{
+  position: relative;
+  text-decoration: none;
+  color:white;
+  font-size: 18px;
+}
+.pie a::after{
+  content: "";
+  position: absolute;
+  background-color: yellow;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+.pie a:hover{
+  color: rgb(231, 231, 231);
+}
+.pie a:hover::after{
+  width: 100%;
+}
+
+.icon{
+  display: flex;
+ list-style: none;
+  color: white;
+  gap: 50px;
+  width: 100%;
+  font-size:20px;
+  justify-content: center;
+  
+}
+.icon > li{
+  display: flex;
+  width: 20px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 50%;
+}
+.icon > li:hover{
+  color: black;
+  cursor: pointer;
+  transition: all 900ms ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
